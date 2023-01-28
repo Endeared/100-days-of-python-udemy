@@ -8,4 +8,5 @@ days completed: 2/100
 ### completed projects:
 + band name generator (**bandName.py**) - DAY 1
 + tip calculator (**tipCalculator.py**) - DAY 2
++ text-based adventure (**treasureIsland.py**) - DAY 3
  
