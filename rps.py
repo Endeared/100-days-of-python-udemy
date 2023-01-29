@@ -58,5 +58,17 @@ elif computerChoice.lower() == 'scissors':
 
 if choice.lower() == computerChoice:
     print(pyfiglet.figlet_format('TIE!'))
-
+elif choice.lower() == 'rock' and computerChoice != 'scissors':
+    print(pyfiglet.figlet_format('PLAYER WINS!'))
+elif choice.lower() == 'paper' and computerChoice != 'rock':
+    print(pyfiglet.figlet_format('PLAYER WINS!'))
+elif choice.lower() == 'scissors' and computerChoice != 'paper':
+    print(pyfiglet.figlet_format('PLAYER WINS!'))
+elif choice.lower() == 'rock' and computerChoice != 'paper':
+    print(pyfiglet.figlet_format('COMPUTER WINS!'))
+elif choice.lower() == 'paper' and computerChoice != 'scissors':
+    print(pyfiglet.figlet_format('COMPUTER WINS!'))
+elif choice.lower() == 'scissors' and computerChoice != 'rock':
+    print(pyfiglet.figlet_format('COMPUTER WINS!'))
+exit()
 
