@@ -1,4 +1,6 @@
 import random
+import time
+import pyfiglet
 
 rock = '''
     _______
@@ -42,3 +44,19 @@ elif choice.lower() == 'scissors':
 else:
     print('Your input is invalid. Please restart the game.')
     exit()
+
+print(f'Computer is choosing...')
+time.sleep(1)
+print(f'Computer has chosen {computerChoice.upper()}.')
+if computerChoice.lower() == 'rock':
+    print(rock)
+elif computerChoice.lower() == 'paper':
+    print(paper)
+elif computerChoice.lower() == 'scissors':
+    print(scissors)
+
+
+if choice.lower() == computerChoice:
+    print(pyfiglet.figlet_format('TIE!'))
+
+
