@@ -14,3 +14,6 @@ days completed: 7/100
 + simple password generator (**passwordGen.py**) - DAY 5
 + maze solver for reeborg's world (**reeborg.py**) - DAY 6
  
+| file name | description | dependencies |
+| --------- | ----------- | ------------ |
+| test | test | test |
