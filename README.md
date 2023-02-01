@@ -16,3 +16,5 @@ days completed: 7/100
 + maze solver for reeborg's world (**reeborg.py**) - DAY 6
 + hangman game (**hangman.py**) - DAY 7
     > __Note__ dependencies: **random**, **pyfiglet**, **hangman_art**, **hangman_words**
++ caesar cipher encoder / decoder (**caesarCipher.py**) - DAY 8
+    > __Note__ dependencies: **caesar_art**
