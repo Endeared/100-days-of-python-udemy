@@ -14,3 +14,5 @@ days completed: 7/100
 + simple password generator (**passwordGen.py**) - DAY 5
     > __Note__ dependencies: **string**, **random**
 + maze solver for reeborg's world (**reeborg.py**) - DAY 6
++ hangman game (**hangman.py**) - DAY 7
+    > __Note__ dependencies: **random**, **pyfiglet**, **hangman_art**, **hangman_words**
