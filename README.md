@@ -10,10 +10,7 @@ days completed: 7/100
 + tip calculator (**tipCalculator.py**) - DAY 2
 + text-based adventure (**treasureIsland.py**) - DAY 3
 + text-based rps game (**rps.py**) - DAY 4
-    > __Note__ dependencies: (**random**, **time**, **pyfiglet**)
+    > __Note__ dependencies: **random**, **time**, **pyfiglet**
 + simple password generator (**passwordGen.py**) - DAY 5
+    > __Note__ dependencies: **string**, **random**
 + maze solver for reeborg's world (**reeborg.py**) - DAY 6
- 
-| file name | description | dependencies |
-| --------- | ----------- | ------------ |
-| test | test | test |
