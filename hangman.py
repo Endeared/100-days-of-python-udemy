@@ -1,5 +1,6 @@
 import random
-from dependencies.hangman_art import logo
+import pyfiglet
+from dependencies.hangman_art import logo, stages
 from dependencies.hangman_words import word_list
 
 
@@ -17,4 +18,25 @@ for blank in range(thisLength):
 while True:
     guess = input("Please gues a letter: ").lower()
 
-    if guess in wordGuessed
+    if guess in wordGuessed:
+        print(f'You have already guessed that letter.')
+    
+    for position in range(thisLength):
+        char = thisWord[position]
+        if char == guess:
+            wordGuessed[position] = char
+    
+    if guess not in thisWord:
+        print(f'That letter is not in the word. You lose one life!')
+        lives -= 1
+        if lives == 0:
+            print(pyfiglet.figlet_format('YOU LOSE!'))
+            exit()
+
+    print(f"{' '.join(wordGuessed)}")
+
+    if "_" not in wordGuessed:
+        print(pyfiglet.figlet_format('YOU WIN!'))
+        exit()
+
+    print(stages[lives])
