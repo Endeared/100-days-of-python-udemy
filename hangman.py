@@ -34,7 +34,7 @@ while playAgain == True:
                 print(pyfiglet.figlet_format('YOU LOSE!'))
                 restart = input('Would you like to play again? (y/n) ').lower()
                 if restart == 'y':
-                    continue
+                    break
                 else:
                     exit()
         print(f"{' '.join(wordGuessed)}")
@@ -43,7 +43,7 @@ while playAgain == True:
             print(pyfiglet.figlet_format('YOU WIN!'))
             restart = input('Would you like to play again? (y/n) ').lower()
             if restart == 'y':
-                continue
+                break
             else:
                 exit()
 
