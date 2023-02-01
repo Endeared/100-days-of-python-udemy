@@ -16,7 +16,7 @@ for blank in range(thisLength):
     wordGuessed += "_"
 
 while True:
-    guess = input("Please gues a letter: ").lower()
+    guess = input("Please guess a letter: ").lower()
 
     if guess in wordGuessed:
         print(f'You have already guessed that letter.')
