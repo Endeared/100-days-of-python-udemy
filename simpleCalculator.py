@@ -39,4 +39,13 @@ while True:
             print('Invalid operation / number(s). Please retry.')
             continue
 
-        check = input(f"Type 'y' to continue calculating with {firstNum}, or type 'n' to start with a new number.")
+        check = input(f"Type 'y' to continue calculating with {firstNum}, or type 'n' to start with a new number.\n")
+
+        while check != 'y' or check != 'n':
+            if check == 'y':
+                break
+            elif check == 'n':
+                calculating = False
+                break
+            print('Invalid input. Please try again.\n')
+            check = input(f"Type 'y' to continue calculating with {firstNum}, or type 'n' to start with a new number.\n")
