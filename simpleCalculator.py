@@ -6,10 +6,10 @@ while True:
 
     firstNum = float(input(f'What is the first number?\n'))
 
-    calculating = true
+    calculating = True
 
 
-    while calculating = True:
+    while calculating == True:
         operation = input('Choose an operation.\n+\n-\n*\n/\n')
         secondNum = float(input(f'What is the second number?\n'))
 
