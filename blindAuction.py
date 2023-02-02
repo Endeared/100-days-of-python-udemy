@@ -12,7 +12,7 @@ while True:
     print(logo)
 
     while addingPlayers == True:
-        name = input(f'What is your name? ').lower()
+        name = input(f'What is your name? ')
         bid = int(input(f'What is your bind? $'))
         playerDict[name] = bid
         check = input(f'Are there any other bidders? (y/n)\n')
