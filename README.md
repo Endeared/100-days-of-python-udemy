@@ -18,5 +18,7 @@ days completed: 9/100
     > __Note__ dependencies: **random**, **pyfiglet**, **hangman_art**, **hangman_words**
 + caesar cipher encoder / decoder (**caesarCipher.py**) - DAY 8
     > __Note__ dependencies: **caesar_art**
-+ simple blind auction tool (**blindAuction.py**) - DAy 9
++ simple blind auction tool (**blindAuction.py**) - DAY 9
     > __Note__ dependencies: **os**, **auctionArt**
++ simple calculator (+, -, *, /) (**simpleCalculator.py**) - DAY 10
+    > __Note__ dependencies: **pyfiglet**
