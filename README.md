@@ -1,7 +1,7 @@
 # 100 days of python udemy course
 collection of all 100 projects, from beginner to advanced
 
-days completed: 7/100
+days completed: 9/100
 
 
 
@@ -18,3 +18,5 @@ days completed: 7/100
     > __Note__ dependencies: **random**, **pyfiglet**, **hangman_art**, **hangman_words**
 + caesar cipher encoder / decoder (**caesarCipher.py**) - DAY 8
     > __Note__ dependencies: **caesar_art**
++ simple blind auction tool (**blindAuction.py**) - DAy 9
+    > __Note__ dependencies: **os**, **auctionArt**
