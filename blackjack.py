@@ -1,13 +1,16 @@
 import random
+import os
 from dependencies.blackjack_art import logo
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+clear = lambda: os.system('cls')
 
 
 startGame = input("Would you like to play a game of blackjack? (y/n)\n").lower()
 
 if startGame == 'y':
 
+    clear()
     print(logo)
 
     card1 = random.choice(cards)
@@ -29,7 +32,12 @@ if startGame == 'y':
         if toContinue == 'y':
             newCard = random.choice(cards)
             currentScore = currentScore + newCard
+            print(f'The card was {newCard}. Your current score is {currentScore}.')
         elif toContinue == 'n':
             while computerScore < 17:
                 computerNew = random.choice(cards)
                 computerScore = computerScore + computerNew
+            break
+
+    print(f'Your score is {currentScore}.')
+    print(f'The computer score is {computerScore}.')
