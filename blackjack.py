@@ -24,4 +24,8 @@ if startGame == 'y':
         print("You win!")
         exit()
 
-    toContinue = input("Type 'y' to get another card, type 'n' to pass.\n")
+    while currentScore < 21:
+        toContinue = input("Type 'y' to get another card, type 'n' to pass.\n")
+        if toContinue == 'y':
+            newCard = random.choice(cards)
+            currentScore = currentScore + newCard
