@@ -20,4 +20,8 @@ if startGame == 'y':
     print(f'Your cards: {[card1, card2]}, current score: {currentScore}\n')
     print(f"Computer's first card: {[computerFirst]}, current score: {computerScore}\n")
 
+    if currentScore == 21:
+        print("You win!")
+        exit()
+
     toContinue = input("Type 'y' to get another card, type 'n' to pass.\n")
