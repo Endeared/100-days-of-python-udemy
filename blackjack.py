@@ -29,3 +29,7 @@ if startGame == 'y':
         if toContinue == 'y':
             newCard = random.choice(cards)
             currentScore = currentScore + newCard
+        elif toContinue == 'n':
+            break
+
+    print(f'Your final score is {currentScore}.')
