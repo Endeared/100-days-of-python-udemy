@@ -30,6 +30,6 @@ if startGame == 'y':
             newCard = random.choice(cards)
             currentScore = currentScore + newCard
         elif toContinue == 'n':
-            break
-
-    print(f'Your final score is {currentScore}.')
+            while computerScore < 17:
+                computerNew = random.choice(cards)
+                computerScore = computerScore + computerNew
