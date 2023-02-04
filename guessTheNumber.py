@@ -4,6 +4,7 @@ from dependencies.guessNumberArt import logo
 
 clear = lambda: os.system('cls')
 guesses = 0
+guessing = False
 
 while True:
     clear()
@@ -12,7 +13,7 @@ while True:
     number = random.randint(1,100)
 
     while True:
-        
+
         difficulty = input(f"Choose a difficulty. Type 'easy' or 'hard':\n").lower()
 
         if difficulty == 'easy':
@@ -24,6 +25,38 @@ while True:
         else:
             print('Invalid input.')
             continue
+
+    guessing = True
+    while guessing == True:
+
+        print(f'You have {guesses} attempt(s) remaining to guess the number.')
+        guess = input('Make a guess: ')
+
+        if int(guess) == number:
+            print('Correct guess! You win!')
+            playAgain = input(f'Would you like to play again? (y/n)\n').lower()
+
+            while True:
+                if playAgain == 'y':
+                    guessing = False
+                    break
+                elif playAgain == 'n':
+                    print('Thanks for playing!')
+                    exit()
+                
+
+        elif int(guess) < number:
+            print('Too low.\nGuess again.')
+            guesses -= 1
+        elif int(guess) > number:
+            print('Too high.\nGuess again.')
+            guesses -= 1
+        elif int(guess) < 1 or int(guess) > 100:
+            print('Guess is outside range.\nGuess again.')
+        else:
+            print('Invalid input. Guess again.')
+        
+    
 
 
 
