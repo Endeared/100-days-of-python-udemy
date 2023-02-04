@@ -1,7 +1,7 @@
 # 100 days of python udemy course
 collection of all 100 projects, from beginner to advanced
 
-days completed: 11/100
+days completed: 12/100
 
 
 
@@ -24,3 +24,5 @@ days completed: 11/100
     > __Note__ dependencies: **pyfiglet**
 + capstone blackjack game (**blackjack.py**) - DAY 11
     > __Note__ dependencies: **random**, **os**, **blackjack_art**
++ guess the number game (**guessTheNumber.py**) - DAY 12
+    > __Note__ dependencies: **random**, **os**, **guessNumber_art**

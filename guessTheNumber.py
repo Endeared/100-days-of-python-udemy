@@ -1,6 +1,6 @@
 import random
 import os
-from dependencies.guessNumberArt import logo
+from dependencies.guessNumber_art import logo
 
 clear = lambda: os.system('cls')
 guesses = 0
