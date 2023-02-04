@@ -26,3 +26,4 @@ days completed: 12/100
     > __Note__ dependencies: **random**, **os**, **blackjack_art**
 + guess the number game (**guessTheNumber.py**) - DAY 12
     > __Note__ dependencies: **random**, **os**, **guessNumber_art**
++ debugging exercises (all online - not local) - DAY 13
