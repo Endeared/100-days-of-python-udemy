@@ -44,8 +44,12 @@ while True:
             print(f'You broke over 21. You lose!')
         elif currentScore == 21:
             print(f'Blackjack! You win.')
-        print(f'Your score is {currentScore}.')
-        print(f'The computer score is {computerScore}.')
+        elif computerScore > 21:
+            print(f'The computer score of {computerScore} broke over 21. You win!')
+        elif currentScore < 21 and currentScore > computerScore:
+            print(f'Your score of {currentScore} beats the computer score of {computerScore}. You win!')
+        elif currentScore < 21 and currentScore <= computerScore:
+            print(f'Your score of {currentScore} is less than or equal to the computer score of {computerScore}. Computer wins!')
     
     elif startGame == 'n':
         print(f'Thank you for trying this software!')
