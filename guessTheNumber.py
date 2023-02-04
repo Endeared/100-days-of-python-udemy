@@ -43,7 +43,9 @@ while True:
                 elif playAgain == 'n':
                     print('Thanks for playing!')
                     exit()
-                
+                else:
+                    print('Invalid input.')
+                    continue
 
         elif int(guess) < number:
             print('Too low.\nGuess again.')
@@ -55,6 +57,21 @@ while True:
             print('Guess is outside range.\nGuess again.')
         else:
             print('Invalid input. Guess again.')
+
+        if guesses == 0:
+            print('You ran out of guesses! You lose.')
+            playAgain = input(f'Would you like to play again? (y/n)\n').lower()
+
+            while True:
+                if playAgain == 'y':
+                    guessing = False
+                    break
+                elif playAgain == 'n':
+                    print('Thanks for playing!')
+                    exit()
+                else:
+                    print('Invalid input.')
+                    continue
         
     
 
