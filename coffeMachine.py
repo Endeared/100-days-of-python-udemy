@@ -1,0 +1,1 @@
+choice = input("What would you like? (espresso / latte / cappucciono)\n")
