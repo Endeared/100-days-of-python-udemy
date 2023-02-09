@@ -12,3 +12,5 @@ while True:
         exit()
     elif choice == "report":
         print(f'Water: {water}ml\nMilk: {milk}ml\nCoffee: {coffee}g\nMoney: ${profit}')
+    
+    if choice == "espresso"
